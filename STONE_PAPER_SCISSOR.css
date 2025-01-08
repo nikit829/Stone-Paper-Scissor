@@ -1,0 +1,95 @@
+* {
+    /* margin: 0px; */
+    padding: 5px;
+    box-sizing: border-box;
+    align-items: center;
+}
+body {
+    background-color: aliceblue;
+}
+.container {
+    background-color: rgba(208, 230, 249, 0.558);
+    padding: 20px;
+    border-radius: 7px;
+    max-width: 750px;
+    margin: 20px auto;
+}
+h1 {
+    text-align: center;
+    font-size: 3vmin;
+}
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+.choice {
+    padding: 0;
+    margin: 4% 0;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+img {
+    border-radius: 50%;
+    width: 25vmin;
+    height: 20vmin;
+    object-fit: cover;
+}
+img:hover {
+    border-radius: 50%;
+    transform: scale(1.09);
+    box-shadow: 0px 6px 12px rgba(252, 127, 127, 0.503); /* Add shadow effect */
+    opacity: 0.8;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* scoreboard stuff */
+.scoreBoard {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(250, 244, 235, 0.797);
+    border-radius: 3px;
+    font-size: 3vmin;
+}.score{
+    margin: 0px 2px;
+}
+#playerScore,#compScore{
+    font-size: 8vmin;
+    margin: 6%;
+}
+#playerScore{
+    padding: 5px 25px;
+}
+
+/* Message */
+.result.hide {
+    display: none;
+}
+.result {
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+    font-size: 3vmin;
+}
+
+/* new game button */
+.new_game{
+    text-align: center;
+}
+.newGame {
+    margin-top: 10px;
+    border: 2px solid rgb(71, 88, 71);
+    background-color: rgb(255, 246, 222);
+    border-radius: 3px;
+    font-size: 2.5vmin;
+    padding: 7px 9px;
+}
+.newGame:hover {
+    background-color: rgb(214, 253, 243);
+    transform: scale(1.09);
+    box-shadow: 0px 3px 9px rgb(253, 151, 151); /* Add shadow effect */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
